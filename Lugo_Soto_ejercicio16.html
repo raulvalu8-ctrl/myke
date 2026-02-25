@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raul Roberto Lugo Soto Ejercicio #16</title>
+
+<style>
+
+body{
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 18px 35px rgba(0,0,0,0.2);
+}
+
+tr:first-child{
+    background: #2c3e50;
+    color: white;
+    font-size: 22px;
+}
+
+td{
+    padding: 16px;
+}
+
+tr:nth-child(even){
+    background-color: #f7f9fc;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select{
+    width: 95%;
+    padding: 9px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus{
+    border-color: #2c3e50;
+    box-shadow: 0 0 8px rgba(44,62,80,0.3);
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]{
+    background-color: #3498db;
+    color: white;
+}
+
+input[type="reset"]{
+    background-color: #e74c3c;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #2980b9;
+}
+
+input[type="reset"]:hover{
+    background-color: #c0392b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<center>
+
+<form>
+
+<table width="60%" border="2" bgcolor="white" cellpadding="10">
+
+<tr>
+<td colspan="2" align="center">
+<b>BITÁCORA DE PRÉSTAMO DE EQUIPOS</b>
+</td>
+</tr>
+
+<tr>
+<td><b>Nombre completo:</b></td>
+<td><input type="text" size="40"></td>
+</tr>
+
+<tr>
+<td><b>Grupo:</b></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td><b>Carrera (opcional):</b></td>
+<td>
+<select>
+<option value="">Seleccionar</option>
+<option>Ingeniería en Software</option>
+<option>Ingeniería Civil</option>
+<option>IPI</option>
+<option>Geodesia</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>Tipo:</b></td>
+<td>
+<select>
+<option>Alumno</option>
+<option>Profesor</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>Fecha y Hora de Préstamo:</b></td>
+<td><input type="datetime-local"></td>
+</tr>
+
+<tr>
+<td><b>Fecha y Hora de Entrega:</b></td>
+<td><input type="datetime-local"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<br>
+<input type="submit" value="Guardar Registro">
+<input type="reset" value="Limpiar Campos">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</center>
+
+</body>
+</html>
